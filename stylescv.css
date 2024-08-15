@@ -1,0 +1,209 @@
+/* Estilos del encabezado */
+header {
+    background-color: #070707; 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center; 
+}
+
+.profile-picture {
+    width: 200px; 
+    height: 200px; 
+    margin: 0 auto 20px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+}
+
+.profile-picture img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+header h1 {
+    font-size: 3rem; 
+    margin: 10px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    letter-spacing: 1px; 
+}
+
+header p {
+    font-size: 1rem; 
+    margin: 15px 0 30px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px; 
+    vertical-align: middle; 
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    padding-bottom: 60px; 
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Estilos de la sección de educación */
+.education {
+    margin-bottom: 30px;
+}
+
+.education h2 {
+    font-size: 2rem;
+    color: #ffffff; 
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background-color: #000;
+    color: #fff;
+}
+
+table td {
+    background-color: #fff;
+}
+
+/* Hacer las celdas de la tabla editables */
+table td[contenteditable="true"] {
+    outline: none;
+    min-width: 100px;
+    cursor: text;
+}
+
+/* Estilos de las secciones */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #fffefe; 
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+/* Estilos del formulario */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+form button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #636060;
+}
+
+/* Estilos para las imágenes dentro del cuerpo de la página */
+section img {
+    max-width: 50%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto 15px; 
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(241, 241, 241, 0.1); 
+}
+
+/* Estilos para el video*/
+video {
+    width: 30%; 
+    max-width: 600px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+/* Estilos para fondo*/
+body {
+    background-image: url('fondo2.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}

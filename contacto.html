@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 🗨️ Contacto</title>
+    <link rel="icon" href="favicon.ico.png" type="image/png">
+    <link rel="stylesheet" href="stylessss.css">
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>NUESTRO PROYECTOS</h1>
+            <nav>
+                <a href="inicio.html" class="nav-button">Inicio</a>
+                <a href="index.html" class="nav-button">Nuestro Equipo</a>
+                <a href="proyectos.html" class="nav-button">Nuestros Proyectos</a>
+                <a href="contacto.html" class="nav-button">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container"></main>
+    <section class="contact-section">
+        <h1>Contacto</h1>
+        <div class="contact-cards">
+            <div class="card">
+                <img src="ale.jpg" alt="Ingeniero 1" class="profile-pic">
+                <h2>Alejandra Navarro</h2>
+                <p>Especialidad: Desarrollo Web</p>
+                <p>Email: a.anavarrom@ucad.edu.mx</p>
+                <p>Teléfono: 5623827437</p>
+                <button onclick="openForm('Alejandra Navarro', 'alejandra@example.com')">Enviar Mensaje</button>
+            </div>
+            <div class="card">
+                <img src="alex.jpg" alt="Ingeniero 2" class="profile-pic">
+                <h2>Alexis Rodríguez</h2>
+                <p>Especialidad: Ciberseguridad</p>
+                <p>Email: alexis.br@ucad.edu.mx</p>
+                <p>Teléfono: 5613743656</p>
+                <button onclick="openForm('Alexis Rodríguez', 'alexis@example.com')">Enviar Mensaje</button>
+            </div>
+            <div class="card">
+                <img src="erik.jpg" alt="Ingeniero 3" class="profile-pic">
+                <h2>Erik Antonio</h2>
+                <p>Especialidad: Ciberseguridad</p>
+                <p>Email: erik@example.com</p>
+                <p>Teléfono:5611722715</p>
+                <button onclick="openForm('Erik Antonio', 'erik@example.com')">Enviar Mensaje</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="contactFormModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeForm()">&times;</span>
+            <h2>Enviar Mensaje a <span id="engineerName"></span></h2>
+            <form id="contactForm" onsubmit="sendMessage(event)">
+                <input type="hidden" id="engineerEmail" name="engineerEmail">
+                <label for="name">Tu Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Tu Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+     function openForm(name, email) {
+        document.getElementById('engineerName').innerText = name;
+        document.getElementById('engineerEmail').value = email;
+        document.getElementById('contactFormModal').style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById('contactFormModal').style.display = "none";
+    }
+
+    function sendMessage(event) {
+        event.preventDefault();
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        const engineerEmail = document.getElementById('engineerEmail').value;
+
+        // Simulación de envío de mensaje
+        alert(`Mensaje enviado a ${engineerEmail}\nDe: ${name} (${email})\nMensaje: ${message}`);
+        closeForm();
+    }
+    </script>
+
+</main>
+ <footer>
+    <p class="center-text">&copy; Nuestro Proyecto</p>
+ </footer>
+
+</body>
+</html>
